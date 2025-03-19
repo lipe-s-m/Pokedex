@@ -1,0 +1,32 @@
+<section class="search">
+    <div class="content">
+        <div class="left">
+            <h2>Insira o nome do Pokemon</h2>
+            <form submit="obterPokemon()">
+                <input
+                    type="text"
+                    [(ngModel)]="inputSearch"
+                    [ngModelOptions]="{ standalone: true }"
+                    placeholder="Insira aqui"
+                    id="inputSearch"
+                />
+                <button type="submit" (click)="obterPokemon()">
+                    <img src="https://i.ibb.co/xt2xqJ58/image.png" alt="" />
+                </button>
+            </form>
+        </div>
+        <div class="right">
+            <p>Adicione o seu Pokemon preferido na sua Pokedex!</p>
+        </div>
+    </div>
+    <div class="naveg">
+        <nav>
+            <ul>
+                <li (click)="getPokemonFromRegion('kanto')">Kanto</li>
+                <li (click)="getPokemonFromRegion('alola')">Alola</li>
+                <li (click)="getPokemonFromRegion('unova')">Unova</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="end-search"></div>
+</section>

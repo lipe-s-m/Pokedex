@@ -1,0 +1,168 @@
+@media (max-width: 1024px) {
+    .cards > ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        grid-auto-rows: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+
+        gap: 2.4rem 2.4rem;
+        padding: 3.2rem 2.4rem;
+    }
+    .cards > ul > li {
+        width: 100%;
+        padding: 0;
+    }
+
+    article {
+        /* min-width: 12rem; */
+        width: 100%;
+        padding: 1rem;
+
+        border: 0.4rem solid gray;
+        border-radius: 0.8rem;
+        background-color: rgb(234, 236, 236);
+    }
+    article > img {
+        width: 100%;
+        border-radius: 0.8rem;
+    }
+    article > img + p {
+        width: 8rem;
+        font-size: 2rem;
+    }
+    article > h3 {
+        display: inline-block;
+        width: 100%;
+
+        font-size: 2.6rem;
+        word-break: break-all;
+        margin-bottom: 0.4rem;
+    }
+    article > .atributos {
+        font-size: 2rem;
+        display: inline-flex;
+    }
+
+    span {
+        display: inline-block;
+        padding: 0rem 0.8rem 0.8rem;
+        border-radius: 0.8rem;
+    }
+    .background {
+        width: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards > ul {
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
+
+        padding: 3.2rem 2rem;
+    }
+    .cards > ul > li {
+        width: 100%;
+        padding: 0;
+    }
+
+    article {
+        padding: 1rem;
+
+        border-radius: 0.8rem;
+    }
+    article > img {
+        width: 100%;
+        border-radius: 0.8rem;
+    }
+    article > img + p {
+        width: 8rem;
+        font-size: 1.6rem;
+    }
+    article > h3 {
+        font-size: 2rem;
+    }
+    article > .atributos {
+        font-size: 1.4rem;
+        gap: 0.6rem;
+    }
+
+    span {
+        padding: 0.2rem 0.8rem 0.6rem;
+    }
+    .background {
+        width: 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards > ul {
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+
+        padding: 3.2rem 2rem;
+    }
+    .cards > ul > li {
+        width: 100%;
+        padding: 0;
+    }
+
+    article {
+        padding: 1rem;
+
+        border-radius: 0.8rem;
+    }
+    article > img {
+        width: 100%;
+        border-radius: 0.8rem;
+    }
+    article > img + p {
+        width: 8rem;
+        font-size: 2rem;
+    }
+    article > h3 {
+        font-size: 2.8rem;
+    }
+    article > .atributos {
+        font-size: 1.8rem;
+        gap: 0.6rem;
+    }
+
+    span {
+        padding: 0.2rem 0.8rem 0.6rem;
+    }
+    .background {
+        width: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .cards > ul {
+        grid-template-columns: repeat(2, minmax(6rem, 1fr));
+        padding: 1rem 1.2rem;
+        gap: 1.6rem 2rem;
+    }
+
+    article {
+        padding: 0.6rem;
+    }
+
+    article > img + p {
+        width: 8rem;
+        font-size: 1.3rem;
+    }
+    article > h3 {
+        font-size: 1.8rem;
+    }
+    article > .atributos {
+        font-size: 1rem;
+        gap: 0.4rem;
+    }
+
+    span {
+        padding: 0.2rem 0.8rem 0.4rem;
+    }
+    .background {
+        width: 4%;
+    }
+}

@@ -1,0 +1,107 @@
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .search .content .left {
+        padding: 0rem 2rem;
+    }
+    .left > h2 {
+        font-size: 2.2rem;
+        width: 100%;
+    }
+
+    form > input {
+        padding: 0.8rem 1.2rem 1rem 0.8rem;
+        width: 20rem;
+        font-size: 1.6rem;
+    }
+    form > input::placeholder {
+        font-size: 1.6rem;
+    }
+    form > button {
+        margin-left: 0.8rem;
+        padding: 0.2rem 0.4rem;
+        background-color: transparent;
+        border: none;
+    }
+    form > button > img {
+        width: 4.4rem;
+    }
+    .naveg > nav > ul > li {
+        padding: 0.6rem 1.6rem;
+        margin-top: 0.2rem;
+        font-size: 2.8rem;
+    }
+    .right > p {
+        width: 80%;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 600px) {
+    .search .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .search .content .left {
+        padding: 0rem;
+    }
+
+    .naveg > nav > ul > li {
+        padding: 0.6rem 1.6rem;
+        margin-top: 0.2rem;
+        font-size: 2.8rem;
+    }
+    .right {
+        width: 100%;
+        justify-content: center;
+    }
+    .right > p {
+        width: auto;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .search .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .search .content .left {
+        padding: 0rem;
+    }
+    .naveg {
+        width: 100%;
+    }
+    .naveg > nav {
+        width: 80%;
+    }
+    .naveg > nav > ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+    .naveg > nav > ul > li {
+        padding: 0.2rem 1rem;
+        font-size: 2rem;
+    }
+    .right {
+        width: 100%;
+        justify-content: center;
+    }
+    .right > p {
+        width: auto;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.6rem;
+    }
+    .end-search::after {
+        clip-path: polygon(5% 0%, 50% 60%, 95% 0%);
+    }
+}
