@@ -21,6 +21,12 @@
     </div>
     <div class="naveg">
         <nav>
+            <p
+                class="minha-pokedex"
+                (click)="getPokemonFromRegion('myPokedex')"
+            >
+                Minha Pokedéx
+            </p>
             <ul>
                 <li (click)="getPokemonFromRegion('kanto')">Kanto</li>
                 <li (click)="getPokemonFromRegion('alola')">Alola</li>

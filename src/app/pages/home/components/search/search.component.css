@@ -74,11 +74,15 @@ form > button > img {
     justify-content: space-around;
     width: 100%;
 }
-.naveg > nav > ul > li {
+.naveg > nav > ul > li,
+.minha-pokedex {
     padding: 0.6rem 1.6rem;
     margin-top: 1rem;
     font-size: 3.2rem;
     list-style: none;
+}
+.minha-pokedex {
+    text-align: center;
 }
 .naveg > nav > ul > li:hover {
     transition: 300ms;

@@ -19,6 +19,10 @@ export class SearchComponent {
     public obterPokemon(): void {
         this.searchService.updateInputSearch(this.inputSearch);
         alert('Pokemon Adicionado na Pokedéx!');
+        this.inputSearch = '';
+    }
+    public getMyPokedex(): void {
+        this.searchService.updateRegionSearch('MyPokedex');
     }
     public getPokemonFromRegion(region: string) {
         this.searchService.updateRegionSearch(region);

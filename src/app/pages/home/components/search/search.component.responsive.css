@@ -32,7 +32,8 @@
     form > button > img {
         width: 4.4rem;
     }
-    .naveg > nav > ul > li {
+    .naveg > nav > ul > li,
+    .minha-pokedex {
         padding: 0.6rem 1.6rem;
         margin-top: 0.2rem;
         font-size: 2.8rem;
@@ -53,7 +54,8 @@
         padding: 0rem;
     }
 
-    .naveg > nav > ul > li {
+    .naveg > nav > ul > li,
+    .minha-pokedex {
         padding: 0.6rem 1.6rem;
         margin-top: 0.2rem;
         font-size: 2.8rem;
@@ -88,7 +90,8 @@
         justify-content: space-around;
         width: 100%;
     }
-    .naveg > nav > ul > li {
+    .naveg > nav > ul > li,
+    .minha-pokedex {
         padding: 0.2rem 1rem;
         font-size: 2rem;
     }
