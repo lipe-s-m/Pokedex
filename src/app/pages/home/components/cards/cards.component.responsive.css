@@ -1,4 +1,7 @@
 @media (max-width: 1024px) {
+    .cards {
+        min-height: 30rem;
+    }
     .cards > ul {
         display: grid;
         grid-template-columns: repeat(3, minmax(20rem, 1fr));
